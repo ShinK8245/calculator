@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(0, 35, 49), rgb(128, 128, 128));
+}
+
+.calculator {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 60px;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(121, 123, 125, 0.5);
+}
+
+input {
+  width: 350px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  background: transparent;
+  box-shadow: inset 0px 0px 15px rgba(255, 129, 2, 0.291); /* Use 'inset' for inner shadow */
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  border: none;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  font-size: 22px;
+  box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.167);
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.053);
+}
+
+.button-equal {
+  width: 164px;
+  border-radius: 40px;
+  box-shadow: inset -2px -2px 40px 10px rgba(255, 129, 2, 0.286);
+}
+
+.button-operator {
+  color: rgb(230, 116, 3);
+}
+
